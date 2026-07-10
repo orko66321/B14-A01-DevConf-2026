@@ -127,3 +127,100 @@ button,
     white-space: nowrap;
     justify-self: end;
 }
+.hero {
+    position: relative;
+    min-height: 820px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/banner.jpg") center/cover no-repeat;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(2, 7, 18, 0.72), rgba(2, 7, 18, 0.82)),
+        radial-gradient(circle at center, rgba(37, 99, 235, 0.14), transparent 42%);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 760px;
+    padding: 0 1rem;
+}
+
+
+.hero .eyebrow {
+    display: inline-flex;
+    margin-bottom: 1.4rem;
+    color: #a5b4fc;
+    font-size: 0.9rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(3.5rem, 7vw, 5.5rem);
+    line-height: 0.92;
+    letter-spacing: -0.06em;
+}
+
+.hero .italic {
+    font-style: italic;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: 1.75rem auto 2.5rem;
+    color: #dbeafe;
+    font-size: 1.05rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    padding: 0.95rem 1.9rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #fff;
+    border-radius: 16px;
+    padding: 0.9rem 2rem;
+    font-weight: 700;
+    box-shadow: 0 16px 32px rgba(37, 99, 235, 0.18);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+.btn-secondary {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.btn-large {
+    padding: 1.15rem 2.4rem;
+    font-size: 1rem;
+}
