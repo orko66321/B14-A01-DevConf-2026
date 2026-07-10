@@ -303,3 +303,87 @@ button,
     margin: 0;
     color: var(--muted);
 }
+.pricing-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: var(--radius);
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+.featured-card {
+    background: linear-gradient(180deg, #2563eb, #1d4ed8);
+    border-color: transparent;
+    color: #ffffff;
+}
+
+.featured-card h3,
+.featured-card .price-note,
+.featured-card li,
+.featured-card ul {
+    color: #e2e8ff;
+}
+
+.featured-card .btn-primary {
+    background: #ffffff;
+    color: #1d4ed8;
+    box-shadow: none;
+}
+
+.featured-card .btn-primary:hover {
+    background: #f1f5ff;
+}
+
+.pricing-head h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.4rem;
+}
+
+.price {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.price-note {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--muted);
+}
+
+.pricing-card ul,
+.launchpad-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.9rem;
+}
+
+.pricing-card li,
+.launchpad-list li {
+    position: relative;
+    padding-left: 1.6rem;
+    color: #dbeafe;
+    line-height: 1.7;
+}
+
+.pricing-card li::before,
+.launchpad-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--primary);
+}
