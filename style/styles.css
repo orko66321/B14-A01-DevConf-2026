@@ -224,3 +224,82 @@ button,
     padding: 1.15rem 2.4rem;
     font-size: 1rem;
 }
+
+.section {
+    padding: 5rem 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.section-heading .subtitle {
+    margin: 1rem auto 0;
+    max-width: 620px;
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.speakers-grid,
+.pricing-grid,
+.blog-grid,
+.launchpad-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.speakers-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.speaker-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(37, 99, 235, 0.25);
+}
+
+.speaker-card img {
+    width: 100%;
+    display: block;
+    height: 320px;
+    object-fit: cover;
+}
+
+.card-copy {
+    padding: 1.5rem;
+}
+
+.tag {
+    display: inline-flex;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.12);
+    color: #a5b4fc;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+}
+
+.speaker-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.3rem;
+}
+
+.speaker-card p {
+    margin: 0;
+    color: var(--muted);
+}
