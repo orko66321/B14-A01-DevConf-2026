@@ -387,3 +387,73 @@ button,
     border-radius: 50%;
     background: var(--primary);
 }
+.launchpad-section {
+    background: linear-gradient(135deg, rgba(229, 241, 255, 0.9), rgba(243, 248, 255, 0.9));
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.launchpad-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+}
+
+.launchpad-copy {
+    padding: 3rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.launchpad-copy h2 {
+    margin: 0.75rem 0 1rem;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.launchpad-copy p {
+    margin: 0 0 1.5rem;
+    color: var(--muted);
+    max-width: 54rem;
+}
+
+.launchpad-highlights {
+    display: grid;
+    gap: 1rem;
+}
+
+.highlight-card {
+    padding: 1.6rem;
+    border-radius: 24px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+.highlight-card h3 {
+    margin: 0 0 0.75rem;
+}
+
+.highlight-card p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.venue-card,
+.blog-card {
+    padding: 2rem;
+    border-radius: var(--radius);
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+.venue-card h3,
+.blog-card h3 {
+    margin-top: 0;
+}
+
+.blog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.blog-card p {
+    color: var(--muted);
+}
