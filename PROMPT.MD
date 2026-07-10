@@ -1,0 +1,1 @@
+Design a new DevConf 2026 AI Challenge section replacing the placeholder with an event-focused Launchpad area. It should feel relevant to a developer conference, include a heading, supporting copy, a feature list, and highlight live mentorship, track spotlight, and community rewards. Keep it consistent with the existing page theme and use only HTML/CSS.
